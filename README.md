@@ -2,6 +2,12 @@
 
 This is a guitar-hero like game, with 2 APIs for selecting a buddy to dance with and a instrument to play! It was build in React, uses Firebase for user auth, and Firestore for the users data to be stored.
 
+#### APIs used
+
+[PokeAPI](https://pokeapi.co/)
+
+[Freesound API](https://freesound.org/docs/api/)
+
 ## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
