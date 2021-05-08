@@ -1,0 +1,13 @@
+@keyframes dance {
+    50% {
+        transform: rotate(10deg);
+    }
+
+    100% {
+        transform: rotate(-10deg);
+    }
+}
+
+.dancer {
+    animation: dance 3s ease-in-out infinite alternate;
+}
