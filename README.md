@@ -1,6 +1,6 @@
 # Project Specs
 
-This is a guitar-hero like game, with 2 APIs for selecting a buddy to dance with and a instrument to play! It was build in React, uses Firebase for user auth, and Firestore for the users data to be stored.
+This is a guitar-hero like game, with 2 APIs for selecting a buddy to dance with and a instrument to play! It was build in React, uses Firebase for user auth, and Firestore for the users data to be stored. The webstie is being hosted on [netlify](https://confident-ramanujan-d2168b.netlify.app/)
 
 #### APIs used
 
