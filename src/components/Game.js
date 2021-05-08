@@ -33,7 +33,7 @@ export default function Game() {
         database.users.doc(currentUser.uid).get().then((doc) => {
             if(doc.exists) {
                 setHighScore(doc.data().highscore)
-            } 
+            }
         })
     )
 
@@ -90,7 +90,7 @@ export default function Game() {
     //needs to handle sending score to firebase if time, rn shoukd just set game state
     function lose() {
         clearInterval(interval)
-        if (score>highScore) {
+        if (highScore===undefined || score>highScore) {
             database.users.doc(currentUser.uid).set({
                 highscore: score,
             }, { merge: true })
@@ -191,8 +191,8 @@ export default function Game() {
                                 <Card.Body>
                                     <p>Listen to a Bossa nova classic with your buddy and play along! Click the arrow keys when the
                                         circle is in the last column on the right to score points and hear some latin percussion! The longer the 
-                                        son goes on, the harder the circle combos you will get. If one goes by, 
-                                        or you press a key when a circle is not in the last column, you lose some popularity and
+                                        song goes on, the harder the game will get. If one goes by, 
+                                        or if you press a key when a circle is not in the last column, you lose some popularity and
                                         will hear a sound indicating so. Lose all of your popularity and it is game over! Good luck :)!
                                     </p>
                                     <Button className="w-100 text-center mt-2" onClick={start}>Start Game!</Button>
